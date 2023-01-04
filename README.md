@@ -33,7 +33,7 @@ Activate the environment and install the requirements
     conda activate pyg
     pip install -r requirements.txt
     
-##IF YOU GET ERROR
+### IF YOU GET ERROR
     
 ModuleNotFoundError: No module named 'torch_sparse'
 
