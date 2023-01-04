@@ -26,7 +26,7 @@ More details and context can be found in [this article](https://bratanic-tomaz.m
 
 Like any Python project you probably should create an environment, something like
 
-    conda create --name py python=3.7
+    conda create --name pyg python=3.7
 
 Activate the environment and install the requirements
 
