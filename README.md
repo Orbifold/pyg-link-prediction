@@ -47,6 +47,12 @@ AttributeError: module 'distutils' has no attribute 'version'
 ImportError: Missing optional dependency 'tables'.  Use pip or conda to install tables.
     
     conda install pytables
+    
+IF your environments OS and ModuleNotFoundError: No module named 'pkg_resources'
+- from https://stackoverflow.com/questions/7446187/no-module-named-pkg-resources
+
+    curl https://bootstrap.pypa.io/ez_setup.py | python
+    
 
 If you wish to visualize the training, install `tensorboard`
     
