@@ -55,7 +55,7 @@ IF your environments OS and ModuleNotFoundError: No module named 'pkg_resources'
 
     
 
-If you wish to visualize the training, install `tensorboard`
+### If you wish to visualize the training, install `tensorboard`
     
     conda install tensorboard
 
