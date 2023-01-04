@@ -32,6 +32,15 @@ Activate the environment and install the requirements
 
     conda activate pyg
     pip install -r requirements.txt
+    
+If you get ModuleNotFoundError: No module named 'torch_sparse'
+
+    pip install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://data.pyg.org/whl/torch-1.10.0+cu102.html
+    
+If you get AttributeError: module 'distutils' has no attribute 'version'
+
+    pip uninstall setuptools
+    pip install setuptools==59.5.0
 
 If you wish to visualize the training, install `tensorboard`
     
