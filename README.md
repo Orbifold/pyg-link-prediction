@@ -51,6 +51,8 @@ ImportError: Missing optional dependency 'tables'.  Use pip or conda to install 
 IF your environments OS and ModuleNotFoundError: No module named 'pkg_resources'
 
     curl https://bootstrap.pypa.io/ez_setup.py | python
+    #from https://stackoverflow.com/questions/7446187/no-module-named-pkg-resources
+
     
 
 If you wish to visualize the training, install `tensorboard`
