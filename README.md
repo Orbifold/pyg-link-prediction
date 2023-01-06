@@ -26,14 +26,36 @@ More details and context can be found in [this article](https://bratanic-tomaz.m
 
 Like any Python project you probably should create an environment, something like
 
-    conda create --name py python=3.7
+    conda create --name pyg python=3.7
 
 Activate the environment and install the requirements
 
     conda activate pyg
     pip install -r requirements.txt
+    
+### IF YOU GET ERROR
+    
+ModuleNotFoundError: No module named 'torch_sparse'
 
-If you wish to visualize the training, install `tensorboard`
+    pip install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://data.pyg.org/whl/torch-1.10.0+cu102.html
+    
+AttributeError: module 'distutils' has no attribute 'version'
+
+    pip uninstall setuptools
+    pip install setuptools==59.5.0
+    
+ImportError: Missing optional dependency 'tables'.  Use pip or conda to install tables.
+    
+    conda install pytables
+    
+IF your environments OS and ModuleNotFoundError: No module named 'pkg_resources'
+
+    curl https://bootstrap.pypa.io/ez_setup.py | python
+    #from https://stackoverflow.com/questions/7446187/no-module-named-pkg-resources
+
+    
+
+### If you wish to visualize the training, install `tensorboard`
     
     conda install tensorboard
 
